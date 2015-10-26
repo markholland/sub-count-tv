@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sub_count" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Channel Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-ZF-8yf">
+                                <rect key="frame" x="659" y="265" width="602" height="123"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="602" id="T8A-J9-s6u"/>
+                                    <constraint firstAttribute="height" constant="123" id="ejO-SK-Z0f"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="86"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9r-M4-VBA">
+                                <rect key="frame" x="854" y="882" width="213" height="86"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="nPt-wf-R8c"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="LeM-Tc-Mpl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgC-iH-2fx">
+                                <rect key="frame" x="961" y="517" width="0.0" height="137"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="140"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.7843137255" green="0.043137254899999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lXi-ZF-8yf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="JZX-1a-F6j"/>
+                            <constraint firstItem="VgC-iH-2fx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RJc-kD-FMi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c9r-M4-VBA" secondAttribute="bottom" constant="112" id="YLu-p5-Fgv"/>
+                            <constraint firstItem="VgC-iH-2fx" firstAttribute="top" secondItem="lXi-ZF-8yf" secondAttribute="bottom" constant="129" id="YlZ-LI-bmF"/>
+                            <constraint firstItem="c9r-M4-VBA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZgH-xx-hH8"/>
+                            <constraint firstItem="c9r-M4-VBA" firstAttribute="top" secondItem="VgC-iH-2fx" secondAttribute="bottom" constant="228" id="eS7-Op-OND"/>
+                            <constraint firstItem="lXi-ZF-8yf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="upE-w4-F7X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultField" destination="VgC-iH-2fx" id="9BM-rh-45X"/>
+                        <outlet property="userField" destination="lXi-ZF-8yf" id="x09-FS-Nu0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
